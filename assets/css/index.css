@@ -1,0 +1,13 @@
+:root {
+    --color-light: #ffffff;
+    --color-dark: #0D0D2B;
+    --color-purple: #2B076E;
+    --color-blue: #3671E9;
+    --color-blue-light: #1181E8;
+    --color-teal: #59C19C;
+    --color-gray: #828282;
+    --color-primary: var(--color-blue);
+    --color-secondary: var(--color-purple);
+    --color-bg: var(--color-main-bg);
+    --gradient-orange: linear-gradient(180deg, #F9AA4B -0.02%, #F7931A 99.99%);
+}
