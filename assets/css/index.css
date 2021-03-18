@@ -1,3 +1,7 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* CSS Variables */
 :root {
     --color-light: #ffffff;
     --color-dark: #0D0D2B;
@@ -10,4 +14,37 @@
     --color-secondary: var(--color-purple);
     --color-bg: var(--color-main-bg);
     --gradient-orange: linear-gradient(180deg, #F9AA4B -0.02%, #F7931A 99.99%);
+}
+/* CSS reset */
+/* selleks, et ei oleks valgeid ääri */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* selleks, et border ja padding jääks elemendi suuruse sisse: */
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+/* selleks, et body oleks alati täis kõrgusega */
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    color: var(--color-light);
+}
+
+.section {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.header {}
+
+.section-hero {
+    background-color: var(--color-dark);
+}
+.section-hero .hero {
+    height: 100vh;
 }
