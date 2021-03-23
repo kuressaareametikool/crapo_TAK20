@@ -25,6 +25,10 @@ html, body {
 *, *:after, *:before {
     box-sizing: border-box;
 }
+/* selleks, et tekstielementidel ei oleks mingeid imelikke margineid vaikimisi */
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
 
 /* selleks, et body oleks alati täis kõrgusega */
 body {
@@ -34,17 +38,101 @@ body {
     font-family: 'Rubik', sans-serif;
     color: var(--color-light);
 }
-
+/* sisu keskele */
 .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* max laius sisule */
+.container {
+    width: 100%;
+    max-width: 1440px;
     padding-left: 120px;
     padding-right: 120px;
 }
 
-.header {}
+/* tüpograafia */
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+h2 {
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+.text-sm {
+    font-size: 16px;
+    line-height: 28px;
+}
+.text-md {
+    font-size: 18px;
+}
+.text-lg {
+    font-size: 20px;
+}
+.text-center {
+    text-align: center;
+}
 
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+/* hero section */
 .section-hero {
     background-color: var(--color-dark);
 }
+.section-hero .container {
+    background:
+    url(../img/illustration.svg)
+    right top 195px
+    no-repeat;
+}
 .section-hero .hero {
-    height: 100vh;
+    height: 100vh; /* 100% ekraani kõrgusest e. view-height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-content {
+    width: 50%;
+    padding-right: 10px;
+}
+.hero-content p {
+    max-width: 70%;
+}
+.hero-continues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 175px;
+}
+.hero-continues-content {
+    margin-bottom: 64px;
+    max-width: 700px;
+}
+.hero-continues .dialog {
+    width: 942px;
+    box-shadow: 0 20px 40px rgba(57, 23, 119, 0.1);
+    position: absolute;
+    top: calc(100% - 175px);
+    height: 350px;
+}
+
+/* cards section */
+.section-cards {
+    min-height: 100vh;
+    color: var(--color-dark);
+}
+.card {
+    background: var(--color-light);
+    color: var(--color-dark);
+    border-radius: 16px;
+    padding: 48px;
 }
