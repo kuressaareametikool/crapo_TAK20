@@ -8,3 +8,5 @@ Teostada see etteantud kujundus html-is/css-is. Selleks loo endanimeline branch 
 `git clone https://github.com/kuressaareametikool/crapo_TAK20/`  
 
 Alustame koos, lõpetame tõenäoliselt iseseisvalt.
+
+
