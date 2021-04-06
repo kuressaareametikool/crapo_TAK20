@@ -11,6 +11,10 @@ Teostada see etteantud kujundus html-is/css-is. Selleks loo endanimeline branch 
 
 **Tegelt võime nii teha, et jagate ülesanded ära, teete pull requestid, ja masterisse kokku võiks ju tulla siis see valmis asi (nagu figmast näha).**
 
+## tõmba masteri kood enda branchi (kui branch on juba varem valmis tehtud)
+
+vscode-is `Source control` sektsioon, `...` nupp vasakul ülal, `Pull, push > Pull from...` ja `origin... > origin/master`
+
 ## KUI ON VALMIS
 
 - Võta enda branch githubis lahti
