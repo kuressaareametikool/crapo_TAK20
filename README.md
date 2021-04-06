@@ -11,4 +11,9 @@ Teostada see etteantud kujundus html-is/css-is. Selleks loo endanimeline branch 
 
 **Tegelt võime nii teha, et jagate ülesanded ära, teete pull requestid, ja masterisse kokku võiks ju tulla siis see valmis asi (nagu figmast näha).**
 
+## KUI ON VALMIS
 
+- Võta enda branch githubis lahti
+- vajuta nuppu `Pull request`
+- seo pull request issue-ga, vajuta nuppu `Reference an issue` (tekstikasti ülaosas paremalt teine nupp, nool jutumullist välja) ja vali endale määratud issue
+- vajuta nuppu `Create pull request`
