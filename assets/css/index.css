@@ -89,9 +89,9 @@ h2 {
 }
 .section-hero .container {
     background:
-    url(../img/illustration.svg)
-    right top 195px
-    no-repeat;
+    url(../img/illustration.svg) /* liigub ühe kausta ülespoole, otsib img kaustast antud faili */
+    right 2vw top 18vh / 70vw /* asub paremalt 2% ekraani laiusest, ülalt 18% ekraani kõrgusest ja on 70% ekraani laiune */
+    no-repeat /* ... ja ei kordu */;
 }
 .section-hero .hero {
     height: 100vh; /* 100% ekraani kõrgusest e. view-height */
@@ -121,7 +121,7 @@ h2 {
     width: 942px;
     box-shadow: 0 20px 40px rgba(57, 23, 119, 0.1);
     position: absolute;
-    top: calc(100% - 175px);
+    top: calc(100% - 175px); /* ülalt parent elemendi kõrgus allapoole, MIINUS 175 px */
     height: 350px;
 }
 
