@@ -1,0 +1,138 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* CSS Variables */
+:root {
+    --color-light: #ffffff;
+    --color-dark: #0D0D2B;
+    --color-purple: #2B076E;
+    --color-blue: #3671E9;
+    --color-blue-light: #1181E8;
+    --color-teal: #59C19C;
+    --color-gray: #828282;
+    --color-primary: var(--color-blue);
+    --color-secondary: var(--color-purple);
+    --color-bg: var(--color-main-bg);
+    --gradient-orange: linear-gradient(180deg, #F9AA4B -0.02%, #F7931A 99.99%);
+}
+/* CSS reset */
+/* selleks, et ei oleks valgeid ääri */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* selleks, et border ja padding jääks elemendi suuruse sisse: */
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+/* selleks, et tekstielementidel ei oleks mingeid imelikke margineid vaikimisi */
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+/* selleks, et body oleks alati täis kõrgusega */
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    color: var(--color-light);
+}
+/* sisu keskele */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* max laius sisule */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+/* tüpograafia */
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+h2 {
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+.text-sm {
+    font-size: 16px;
+    line-height: 28px;
+}
+.text-md {
+    font-size: 18px;
+}
+.text-lg {
+    font-size: 20px;
+}
+.text-center {
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+/* hero section */
+.section-hero {
+    background-color: var(--color-dark);
+}
+.section-hero .container {
+    background:
+    url(../img/illustration.svg) /* liigub ühe kausta ülespoole, otsib img kaustast antud faili */
+    right 2vw top 18vh / 70vw /* asub paremalt 2% ekraani laiusest, ülalt 18% ekraani kõrgusest ja on 70% ekraani laiune */
+    no-repeat /* ... ja ei kordu */;
+}
+.section-hero .hero {
+    height: 100vh; /* 100% ekraani kõrgusest e. view-height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-content {
+    width: 50%;
+    padding-right: 10px;
+}
+.hero-content p {
+    max-width: 70%;
+}
+.hero-continues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 175px;
+}
+.hero-continues-content {
+    margin-bottom: 64px;
+    max-width: 700px;
+}
+.hero-continues .dialog {
+    width: 942px;
+    box-shadow: 0 20px 40px rgba(57, 23, 119, 0.1);
+    position: absolute;
+    top: calc(100% - 175px); /* ülalt parent elemendi kõrgus allapoole, MIINUS 175 px */
+    height: 350px;
+}
+
+/* cards section */
+.section-cards {
+    min-height: 100vh;
+    color: var(--color-dark);
+}
+.card {
+    background: var(--color-light);
+    color: var(--color-dark);
+    border-radius: 16px;
+    padding: 48px;
+}
