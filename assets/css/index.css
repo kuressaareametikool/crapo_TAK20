@@ -1,0 +1,13 @@
+body, html {
+    background-color: #0d0d2b;
+}
+
+.footer-foot {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background-color: #0d0d2b;
+    color: white;
+}
+.footer-social {
+}
