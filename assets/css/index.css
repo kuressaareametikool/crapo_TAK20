@@ -131,10 +131,22 @@ h2 {
 .section-cards {
     min-height: 100vh;
     color: var(--color-dark);
+    flex-direction: row;
+    justify-content: center;
 }
 .card {
     background: var(--color-light);
     color: var(--color-dark);
     border-radius: 16px;
     padding: 48px;
+    height: 433px;
+    width: 370px;
+    border: solid black 2px;
 }
+
+.cards-container {
+display: flex;
+flex-direction: row;
+
+}
+l
