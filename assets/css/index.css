@@ -137,4 +137,22 @@ h2 {
     color: var(--color-dark);
     border-radius: 16px;
     padding: 48px;
+    height: 433px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.biticon {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-self: center;
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;
+}
+.dialog.card {
+    visibility: hidden;
 }
